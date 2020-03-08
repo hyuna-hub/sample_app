@@ -1,0 +1,318 @@
+Started GET "/top" for 10.0.2.2 at 2020-03-08 04:02:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 623ms (Views: 615.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateLists (20200308041756)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateLists (20200308041756)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200308041756_create_lists.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "lists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200308041756_create_lists.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200308041756"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-08 04:29:08.388401"], ["updated_at", "2020-03-08 04:29:08.388401"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/todolists/new" for 10.0.2.2 at 2020-03-08 05:17:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 557ms (Views: 543.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-03-08 05:19:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-03-08 05:20:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TM/2yO0YskE+CnVviIoqjRCINQGemfP+TeTUuvTxu7GyYYbTuq01wkNBspbG28qC5seXHVLjhMDr3fPGoYJkTg==", "list"=>{"title"=>"テスト", "body"=>"投稿テスト"}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[36mList Create (2.4ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "テスト"], ["body", "投稿テスト"], ["created_at", "2020-03-08 05:20:21.260211"], ["updated_at", "2020-03-08 05:20:21.260211"]]
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+Redirected to http://localhost:3000top
+Completed 302 Found in 10ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-03-08 05:20:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-03-08 05:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1XBRKYNpwkMILAIWHDtVV48wkpUGkd2cM4F7G9tKACwr3iEy1NxFwHVnxe9SarVYeX8wicrrqqKVuFxnjjnf0w==", "list"=>{"title"=>"テスト", "body"=>"投稿テスト"}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[36mList Create (4.1ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "テスト"], ["body", "投稿テスト"], ["created_at", "2020-03-08 05:21:04.284080"], ["updated_at", "2020-03-08 05:21:04.284080"]]
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+Redirected to http://localhost:3000top
+Completed 302 Found in 19ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-03-08 05:21:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-03-08 05:21:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2IxJGqzgcK+6J31HxIsmYRmXoLVXsnUK4Ecu17X68vYmIjkB+1X3LMdsur6K2sZu79gCqZvIAjRGfgmr4IktCQ==", "list"=>{"title"=>"テスト", "body"=>"投稿テスト"}, "commit"=>"投稿"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[36mList Create (2.6ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "テスト"], ["body", "投稿テスト"], ["created_at", "2020-03-08 05:21:55.758026"], ["updated_at", "2020-03-08 05:21:55.758026"]]
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+Redirected to http://localhost:3000top
+Completed 302 Found in 13ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-03-08 05:23:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-03-08 05:23:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EWNMq9yRZW5ZWWiMPPV+cx9kkpvQdqhcxWkw4rTav9XvzTywiyTi7SQSr3VypJ586SswhxwM32JjUBee4algKg==", "list"=>{"title"=>"", "body"=>""}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[36mList Create (2.2ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["body", ""], ["created_at", "2020-03-08 05:23:20.576103"], ["updated_at", "2020-03-08 05:23:20.576103"]]
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+Redirected to http://localhost:3000top
+Completed 302 Found in 10ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-03-08 05:24:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-03-08 05:24:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PDmbRbN+zj5Ze0jb3RDi58LQhtDGpw7uN9tzmhVgM8HCl+te5MtJvSQwjyKTQQLoNJ8kzArdedCR4lTmQBPsPg==", "list"=>{"title"=>"", "body"=>""}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[36mList Create (2.4ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["body", ""], ["created_at", "2020-03-08 05:24:06.848139"], ["updated_at", "2020-03-08 05:24:06.848139"]]
+  ↳ app/controllers/todolists_controller.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:9
+Redirected to http://localhost:3000top
+Completed 302 Found in 15ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-03-08 05:37:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 229ms (Views: 215.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-03-08 05:37:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wNfmid6mmSAIA0xKAAQJRj3E0DY7nF8B48EM0nnhGNs+eZaSiRMeo3VIi7NOVelJy4tyKvfmKD9F+CuuLJLHJA==", "list"=>{"title"=>"テスト", "body"=>"投稿テスト２"}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[36mList Create (1.9ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "テスト"], ["body", "投稿テスト２"], ["created_at", "2020-03-08 05:37:57.455827"], ["updated_at", "2020-03-08 05:37:57.455827"]]
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+Redirected to http://localhost:3000/top
+Completed 302 Found in 12ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/top" for 10.0.2.2 at 2020-03-08 05:37:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todolists" for 10.0.2.2 at 2020-03-08 05:48:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:3
+  Rendered todolists/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 227ms (Views: 216.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/todolists/1" for 10.0.2.2 at 2020-03-08 05:55:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 224ms (Views: 206.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/todolists" for 10.0.2.2 at 2020-03-08 05:56:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:3
+  Rendered todolists/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/todolists/1" for 10.0.2.2 at 2020-03-08 05:56:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/todolists/1" for 10.0.2.2 at 2020-03-08 05:57:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 57ms (Views: 51.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-03-08 06:01:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-03-08 06:01:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"srig29WiCyehQ75YTqYYycbqEkD+AGhksTgwtKbnDNpMFtDAgheMpNwIeaEA9/jGMKWwXDJ6H1oXARfI85TTJQ==", "list"=>{"title"=>"投稿すると", "body"=>"詳細ページへ移動します"}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[36mList Create (1.5ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "投稿すると"], ["body", "詳細ページへ移動します"], ["created_at", "2020-03-08 06:01:51.206298"], ["updated_at", "2020-03-08 06:01:51.206298"]]
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+Redirected to http://localhost:3000/top
+Completed 302 Found in 10ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/top" for 10.0.2.2 at 2020-03-08 06:01:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-03-08 06:02:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 226ms (Views: 213.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-03-08 06:03:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"41Uv8q+wyun5yMnBpg+zOz0G/qQJUBWKhNNGlKj1KJYd+1/p+AVNaoSDDjjoXlM0y0lcuMUqYrQi6mHo/Yb3aQ==", "list"=>{"title"=>"投稿すると", "body"=>"詳細ページに移動"}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[36mList Create (3.6ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "投稿すると"], ["body", "詳細ページに移動"], ["created_at", "2020-03-08 06:03:04.676404"], ["updated_at", "2020-03-08 06:03:04.676404"]]
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+Redirected to http://localhost:3000/todolists/8
+Completed 302 Found in 17ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/todolists/8" for 10.0.2.2 at 2020-03-08 06:03:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 58.6ms | ActiveRecord: 0.7ms)
+
+
